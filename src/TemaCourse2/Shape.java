@@ -1,32 +1,27 @@
 package TemaCourse2;
 
 public class Shape {
-	private int length;
-	private int width;
-	private double radius;
+//	private int length;
+//	private int width;
+//	private double radius;
 	
 	public Shape (int length) {
-		this.length=length;
-		System.out.println(length);
+		System.out.println("The area of square is: "+ calculateSquareArea(length));
 	}
 	
 	public Shape (int length, int width) {
-		this.length = length;
-		this.width = width;
-		System.out.println(length);
-		System.out.println(width);
+		System.out.println("The area of the rectangle is: " + calculateRectagleArea(length, width));
 	}
 	
-	public Shape (double Radius) {
-		this.radius= radius;
-		System.out.println(radius*radius*Math.PI);
+	public Shape (double radius) {
+		System.out.println("The area of the circle is: "+ radius*radius*Math.PI);
 	}
 	
-	public int calculateSquareArea() {
+	public int calculateSquareArea(int length) {
 		return length * length;
 	}
 	
-	public int calculateRectagleArea() {
+	public int calculateRectagleArea(int length, int width) {
 		return length*width;
 	}
 }

@@ -23,6 +23,7 @@ public class GreatestOfThreenr {
 	}
 	
 	public void compareThenumbers() {
+		askThenumbers();
 		if(number1 > number2 && number1 > number3) {
 			System.out.println("First number is the greatest!");
 		}else if(number2 > number1 && number2 > number3){
