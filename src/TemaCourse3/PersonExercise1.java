@@ -9,6 +9,7 @@ public class PersonExercise1 {
 		Scanner scan = new Scanner(System.in);
 		System.out.println("Varsta persoanei este: ");
 		pers1 = scan.nextInt();
+		scan.close();
 	}
 	
 	public void compareTheAge(){
