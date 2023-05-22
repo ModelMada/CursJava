@@ -47,13 +47,13 @@ public class ForVsWhile {
 	}
 	
 	public static void rezolvareCuDoWhile() {
-		System.out.println("Please enter a number: ");
+//		System.out.println("Please enter a number: ");
 		Scanner scan = new Scanner(System.in);
-		int nr = scan.nextInt();
+		int nr;
 		do {
-			System.out.println(nr*10);
 			System.out.println("Please enter a number: ");
 			nr = scan.nextInt();
+			System.out.println(nr*10);
 		} while(nr!=0);
 		scan.close();
 	}
