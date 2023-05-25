@@ -12,7 +12,7 @@ public class EsteVocala {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		System.out.println("Te rpg introdu o litera: ");
+		System.out.println("Te rog introdu o litera: ");
 		Scanner scan = new Scanner(System.in);
 		char litera = scan.next().charAt(0); //aduc doar caracterul de pe pozitia 0
 		
