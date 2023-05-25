@@ -1,10 +1,99 @@
 package Course5;
 
+import java.util.Scanner;
+
 public class PasswordValidated {
 
+	/*
+	 * Facem un program care valideaza o parola pe baza unor reguli:
+	 * 
+	 * Reguli:
+	 * 1.parola trebuie sa fie minim 10 caractere
+	 * 2.parola trebuie sa contina un upper case
+	 * 3.parola nu trebuie sa fie la fel ca username
+	 * 
+	 * Intrebam userul un username si o parola
+	 * il informam regulile parolei
+	 * 
+	 * Daca parola este valida, atunci printam : "Parola valida!"
+	 * daca parola este invalida il informam care reguli nu au fost respectate si 
+	 * il tinem in bucla pana introduce o parola valida
+	 * 
+	 */
+	
+	String username;
+	static String password;
+	Scanner scan  =  new Scanner(System.in);
+	static boolean valid;
+	
+	public void getUsername() {
+		System.out.println("Te rog introdu username:");
+		username = scan.next();
+	}
+	
+	public String getPassword() {
+		System.out.println("Te rog introdu parola:");
+		return scan.next();
+	}
+	
+	public void printPasswordRules() {
+		System.out.println("Reguli parola :");
+		System.out.println("1. Parola trebuie sa fie minim 10 caractere");
+		System.out.println("2. Parola trebuie sa contina un upper case");
+		System.out.println("3. Parola nu trebuie sa fie la fel ca username");
+	}
+	
+	public void checkPasswordRules(String password) {	
+		valid = true;
+		
+		if(password.length() < 10) {
+		
+			System.out.println("Parola trebuie sa fie minim 10 caractere");
+			valid = false;
+		}
+		
+		/*
+		 * password = "Admin"
+		 * password.equals(password.toLowerCase())
+		 * 
+		 */
+		
+		if(password.equals(password.toLowerCase())) {
+			System.out.println("Parola trebuie sa contina un upper case");
+			valid= false;
+		}
+		
+		if(password.equals(username)) {
+			System.out.println("Parloa nu trebuie sa fie la fel ca username");
+			valid= false;
+		}
+	}
+	
+	
+	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		
+		PasswordValidated obj = new PasswordValidated();
+		obj.printPasswordRules();
+		obj.getUsername();
+		
+		do {
+			obj.checkPasswordRules(obj.getPassword());
+			
+			
+		}while(!valid);
+		System.out.println("parola este valida!");
+		
+		/*
+		 * PasswordValidator obj = new PasswordValidator();
+		obj.getUsername();
+		do {
+			obj.printPasswordRules();
+			obj.getPassword();
+		}while (!obj.checkPasswordRules());
+		 * 
+		 */
+			
 	}
 
 }
