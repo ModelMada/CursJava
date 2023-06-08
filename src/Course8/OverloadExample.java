@@ -6,6 +6,7 @@ public class OverloadExample {
 		// TODO Auto-generated method stub
 	
 		multiply(3, 2.4);
+		
 		System.out.println(123);
 		System.out.println("123");
 		System.out.println('1');
