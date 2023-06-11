@@ -2,6 +2,7 @@
 
 package TemaCourse7;
 
+import java.util.Scanner;
 
 public class Exercitiu1Curs7 {
 	
@@ -10,8 +11,18 @@ public class Exercitiu1Curs7 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
+		askTheUser();
 		rezolvareCuFor();
 		rezolvareCuWhile();
+	}
+	
+	public static int askTheUser() {
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Cate elemente sa aiba sirul? ");
+		int nrElemente=scan.nextInt();
+		scan.close();
+		return nrElemente;
+
 	}
 	
 	public static void rezolvareCuFor() {
