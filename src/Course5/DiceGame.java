@@ -40,7 +40,7 @@ public class DiceGame {
 			}
 
 		}
-		System.out.println("Game over!");
+		// System.out.println("Game over!");
 
 	}
 

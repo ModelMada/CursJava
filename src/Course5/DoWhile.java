@@ -19,7 +19,7 @@ public class DoWhile {
 		do {
 			System.out.println(array[j]);
 			j++;
-		} while(j>array.length);
+		} while(j<array.length);
 }
 
 }

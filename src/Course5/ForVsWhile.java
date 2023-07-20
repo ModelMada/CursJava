@@ -13,8 +13,8 @@ public class ForVsWhile {
 		// TODO Auto-generated method stub
 		
 	//	rezolvareCuFor();
-	//	rezolvareCuWhile();
-		rezolvareCuDoWhile();
+	// rezolvareCuWhile();
+	 rezolvareCuDoWhile();
 		
 
 	}

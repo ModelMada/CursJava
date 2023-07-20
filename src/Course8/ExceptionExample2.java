@@ -14,7 +14,7 @@ public class ExceptionExample2 {
 			System.out.println("Please insert num2");
 			int num2 = scan.nextInt();
 			
-			num2= (Integer) null;
+	//		num2= (Integer) null;
 			
 			System.out.println(num1/num2);
 			

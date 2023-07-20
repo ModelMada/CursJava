@@ -8,7 +8,7 @@ public class ExceptionExample {
 		String[] week = {"L","M","Mi","J","V","S","D"};
 		
 		try {
-			System.out.println(week[8]);
+			System.out.println(week[7]);
 			
 		}catch(ArrayIndexOutOfBoundsException obj) {
 			System.out.println(obj.getMessage());

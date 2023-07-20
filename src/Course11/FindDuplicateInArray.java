@@ -27,6 +27,14 @@ public class FindDuplicateInArray {
 		for(String element : numeDuplicat) {
 			System.out.println("nume duplicat: " + element);			// duplicatele nu sunt adaugate in set
 		}
+		
+		System.out.println("---------------");
+		
+		//elimin duplicatele si afisez array fara duplicate
+		Set<String> numeDuplicateSet = new HashSet<String>(Arrays.asList(names));
+		for(String numeDupSet : numeDuplicateSet) {
+			System.out.println(numeDupSet);
+		}
 
 	}
 

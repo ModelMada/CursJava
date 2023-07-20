@@ -23,16 +23,17 @@ public class TestWildAnimal {
 		simba.makeSound();//metoda suprascrisa
 		simba.eatMeat();
 
-		/*
-		WildAnimal simba = new Lion();
-		simba.makeSound();
-		//simba.eatMeat(); //metoda nu se regaseste in wildAnimal
+		System.out.println("---------------");
+	
+		WildAnimal simba2 = new Lion();
+		simba2.makeSound();
+		simba.eatMeat(); //metoda nu se regaseste in wildAnimal
 		((Lion) simba).eatMeat();//folosim cast pt a utiliza metoda din lion desi obiectul este de tip wild animal
 		
-		simba = new Deer();
-		simba.makeSound();
+		//simba = new Deer();
+		//simba.makeSound();
 		
-		*/
+		
 	}
 
 }

@@ -18,8 +18,8 @@ public class SwitchExample2 {
 		Scanner scan = new Scanner(System.in);
 		System.out.println("Te rog introdu ce an esti:");
 		an = scan.nextInt();
-		System.out.println("Te rog introdu punctajul: ");
-		punctaj = scan.nextInt();
+		// System.out.println("Te rog introdu punctajul: ");
+		// punctaj = scan.nextInt();
 		
 		switch(an) {
 		case 3:

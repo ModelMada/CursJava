@@ -16,7 +16,7 @@ import java.util.*;
 
 public class CoduriPostale {
 	
-	Map<Integer,String> cp; 
+	Map<Integer,String> cp; //am declarat un obiect/variabila static cp de tipul Map care se initilizeaza de la inceput
 	
 	public CoduriPostale() {				//constructor 
 		cp = new HashMap<>();
